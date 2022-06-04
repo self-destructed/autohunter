@@ -1,12 +1,23 @@
 // если вы хотите использовать sass-переменные - удалите root
 // colors
+$section-padding-block: 60px;
+$section-padding-block-start: $section-padding-block;
+$section-padding-block-end: $section-padding-block;
+
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
+  --font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --content-width: 1170px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-  // colors
-  --light-color: #fff;
+  // col
+
+  // --light-color: #ff;
+
+  // @media screen and (min-width: 767px) {
+  //   --container-offset: 50px;
+  // }
 }
