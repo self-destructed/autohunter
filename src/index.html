@@ -7,11 +7,24 @@
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      <picture>
-        <source srcset="img/cover.avif" type="image/avif">
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
-      </picture>
+      <!--Why?-->
+      @include('partials/why.html')
+      <!--Offer-->
+      @include('partials/offer.html')
+      <!--About-->
+      @include('partials/about.html')
+      <!--Auto-->
+      @include('partials/auto.html')
+      <!--Process-->
+      @include('partials/process.html')
+      <!--Services-->
+      @include('partials/services.html')
+      <!--Reviews-->
+      @include('partials/reviews.html')
+      <!--faq-->
+      @include('partials/faq.html')
+      <!--Contacts Form-->
+      @include('partials/contacts.html')
     </main>
 
     @include('partials/footer.html')
