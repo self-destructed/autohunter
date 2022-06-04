@@ -1,0 +1,29 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  &_light {
+    --icon-color: #fff;
+    --bg-color: #000;
+  }
+  &_dark {
+    --icon-color: #000;
+    --bg-color: #fff;
+  }
+}
+.socials__item {
+}
+.socials__link {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+
+  svg {
+    fill: var(--icon-color);
+  }
+}
