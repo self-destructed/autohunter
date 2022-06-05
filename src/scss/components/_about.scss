@@ -1,0 +1,35 @@
+.section {
+}
+.about-section {
+}
+.container {
+}
+.section__title {
+}
+.about-section__title {
+}
+.about {
+  @include small-tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+}
+.about__text {
+  color: #070706;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.about__image {
+  display: flex;
+  justify-content: center;
+
+}
+.about__img {
+  @include small-tablet {
+    height: 500px;
+    width: 500px;
+  }
+}
