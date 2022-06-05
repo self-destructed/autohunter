@@ -24,6 +24,10 @@
   background-color: var(--bg-color);
 
   svg {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+    margin-left: 2px;
     fill: var(--icon-color);
   }
 }
