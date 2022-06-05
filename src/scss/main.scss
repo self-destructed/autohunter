@@ -15,3 +15,12 @@
 @import "./components/faq";
 @import "./components/contacts";
 
+// повторяющиеся стили
+
+// Заголовки H2
+
+h2.section__title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+}
