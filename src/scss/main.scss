@@ -5,11 +5,14 @@
 @import "settings";
 
 // подключения компонентов страницы
+
+@import "./components/section";
 @import "./components/header";
 @import "./components/why";
 @import "./components/socials";
 @import "./components/offer";
 @import "./components/about";
+@import "./components/auto";
 @import "./components/process";
 @import "./components/services";
 @import "./components/reviews";
