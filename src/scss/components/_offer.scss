@@ -1,0 +1,44 @@
+.section {
+}
+.offer-section {
+}
+.container {
+}
+.section__title {
+}
+.offer-section__title {
+  line-height: 1.4;
+  opacity: 0.9;
+  text-align: left;
+}
+.offer {
+}
+.list-reset {
+}
+.offer__list {
+  @include small-tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+}
+.offer__item {
+}
+.status {
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+  align-items: center;
+}
+.status__icon {
+  height: 50px;
+  width: 50px;
+}
+.status__text {
+  color: #070706;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  opacity: 0.85;
+}
