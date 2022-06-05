@@ -19,15 +19,15 @@
 .socials__link {
   width: 30px;
   height: 30px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items:center;
   border-radius: 50%;
   background-color: var(--bg-color);
 
   svg {
     width: 25px;
     height: 25px;
-    margin-top: 2px;
-    margin-left: 2px;
     fill: var(--icon-color);
   }
 }
