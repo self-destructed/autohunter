@@ -1,0 +1,57 @@
+.section {
+}
+.services-section {
+}
+.container {
+}
+.section__title {
+}
+.services-section__title {
+}
+.services {
+  @include small-tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+.services__block {
+  padding-bottom: 30px;
+}
+.services__image {
+}
+.services__block_title {
+  font-size: 22px;
+  line-height: 1.23;
+  font-weight: 600;
+  color: #000;
+}
+.services__price {
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: #000;
+}
+.services__list {
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #101010;
+  padding-left: 30px;
+}
+.services__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222222;
+  border: 1px solid #222222;
+  height: 45px;
+  width: 155px;
+  border-radius: 50px;
+}
+.services__link {
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+}

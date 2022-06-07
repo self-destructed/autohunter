@@ -12,7 +12,6 @@
   @include small-tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 30px;
     column-gap: 30px;
   }
 }
