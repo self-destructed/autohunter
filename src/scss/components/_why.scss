@@ -1,0 +1,39 @@
+.why-section {
+}
+
+.why-section__title {
+  line-height: 1.23;
+  text-align: left;
+}
+.section__title {
+
+}
+.why {
+}
+.why__list {
+  @include small-tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+
+  @include tablet {
+    // background-color: red;
+  }
+}
+
+.why__item {
+}
+.reason {
+}
+.reason__icon {
+}
+.reason__title {
+  font-size: 22px;
+}
+.reason__text {
+  font-size: 14px;
+  line-height: 1.55;
+}
