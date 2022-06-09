@@ -1,3 +1,2 @@
-console.log('components');
-
-import './components/auto-carousel'
+import "./components/auto-carousel";
+import "./components/faq-accordion";

@@ -1,53 +1,60 @@
 @mixin accordion {
   .accordion {
-    max-width: 500px;
+    --paddingY: 16px;
+    --paddingX: 24px;
+    --padding-top: var(--paddingY);
+    --padding-bottom: var(--paddingY);
+    --padding-left: var(--paddingX);
+    --padding-right: var(--paddingX);
+    --icon-size: 32px;
+    --icon-width: var(--icon-size);
+    --icon-height: var(--icon-size);
+    --text-color: #000;
+
     box-sizing: border-box;
-    margin-top: 5px;
-    background: white;
+    margin: 0;
 
     &[open] > summary:before {
-      transform: rotate(90deg);
+      transform: rotate(45deg);
     }
   }
 
   .accordion__summary {
-    border: 4px solid transparent;
-    outline: none;
-
-    &:focus {
-      border-color: black;
-    }
-
-    padding: 1rem;
-    display: block;
-    background: #444;
-    color: white;
-    padding-left: 2.2rem;
     position: relative;
+    display: block;
+    outline-color: var(--text-color);
+    padding: var(--padding-top) calc(2 * calc(var(--padding-right)))
+      var(--padding-bottom) var(--padding-left);
     cursor: pointer;
 
-    &::-webkit-details-marker {
-      display: none;
+    &:hover::before {
+      background-color: #f90606;
     }
 
     &::before {
       content: "";
-      border-width: 0.4rem;
-      border-style: solid;
-      border-color: transparent transparent transparent #fff;
       position: absolute;
-      top: 1.3rem;
-      left: 1rem;
+      width: var(--icon-width);
+      height: var(--icon-height);
+      top: calc(50% - (var(--icon-height) / 2));
+      right: calc(var(--padding-right) - (var(--icon-width)) / 2);
+      background-image: url("../../img/svg/plus-icon.svg");
+      background-size: 75%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      background-color: #000;
       transform: rotate(0);
-      transform-origin: 0.2rem 50%;
-      transition: 0.25s transform ease;
+      transition: 0.3s transform ease, background-color 0.3s ease;
+    }
+
+    &::-webkit-details-marker {
+      display: none;
     }
   }
 
   .accordion__content {
-    border-top: none;
-    padding: 10px;
-    border: 2px solid #888;
-    border-top: none;
+    --paddingY-half: calc(var(--paddingY) / 2);
+    padding: var(--paddingY-half) var(--paddingX);
   }
 }
