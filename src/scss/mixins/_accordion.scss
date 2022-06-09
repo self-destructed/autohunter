@@ -1,0 +1,53 @@
+@mixin accordion {
+  .accordion {
+    max-width: 500px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background: white;
+
+    &[open] > summary:before {
+      transform: rotate(90deg);
+    }
+  }
+
+  .accordion__summary {
+    border: 4px solid transparent;
+    outline: none;
+
+    &:focus {
+      border-color: black;
+    }
+
+    padding: 1rem;
+    display: block;
+    background: #444;
+    color: white;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      border-width: 0.4rem;
+      border-style: solid;
+      border-color: transparent transparent transparent #fff;
+      position: absolute;
+      top: 1.3rem;
+      left: 1rem;
+      transform: rotate(0);
+      transform-origin: 0.2rem 50%;
+      transition: 0.25s transform ease;
+    }
+  }
+
+  .accordion__content {
+    border-top: none;
+    padding: 10px;
+    border: 2px solid #888;
+    border-top: none;
+  }
+}

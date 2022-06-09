@@ -119,7 +119,7 @@
     "description": "Snippet for simple html svg images"
   },
   "tooltip": {
-  "prefix": "g-tooltip",
+    "prefix": "g-tooltip",
     "body": [
       "<span class=\"tooltip\">",
       "  <button class=\"tooltip__btn\" aria-describedby=\"$1\">$2</button>",
@@ -130,6 +130,18 @@
       "</span>"
     ],
     "description": "Snippet for tooltip"
+  },
+  "accordion html sctructure": {
+    "prefix": "g-accordion",
+    "body": [
+      "<details class=\"accordion js-accordion\">",
+      " <summary class=\"accordion__summary js-summary\">I can change this too. </summary>",
+      "  <div class=\"accordion__content js-content\">",
+      "<p> Lorem diandae  </p>",
+      "  </div>",
+      "</details>"
+    ],
+    "description": "Snippet for basic accordion structure"
   },
   "tabs html sctructure": {
     "prefix": "g-tabs",
