@@ -6,7 +6,6 @@
   text-align: left;
 }
 .section__title {
-
 }
 .why {
 }
@@ -31,9 +30,10 @@
 .reason__icon {
 }
 .reason__title {
-  font-size: 22px;
+  // font-size: 22px;
+  @include font-size(1.44rem);
 }
 .reason__text {
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 1.55;
 }

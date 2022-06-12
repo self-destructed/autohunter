@@ -21,11 +21,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 30px;
     column-gap: 30px;
+    // @include rfs(30px, column-gap);
+    // @include rfs(30px, row-gap);
   }
 }
 .offer__item {
 }
 .status {
+  //TODO container query?
   display: flex;
   flex-direction: row;
   column-gap: 25px;
@@ -37,8 +40,7 @@
 }
 .status__text {
   color: #070706;
-  font-size: 18px;
+  // font-size: 18px;
   line-height: 1.4;
-  font-weight: 400;
-  opacity: 0.85;
+  opacity: 0.85; //!fix grey color without opacity?
 }

@@ -29,35 +29,31 @@
 }
 
 .hero-section__title {
-  letter-spacing: 1px;
-  font-size: 30px;
+  letter-spacing: 0.0625em;
   font-weight: 600;
   line-height: 1.23;
   color: #fff;
 
-  @include small-tablet {
-    font-size: 48px;
-  }
-
-  @include tablet {
-    font-size: 52px;
-  }
+  @include font-size(3.583rem);
 
   span {
-    font-size: 30px;
+    @include font-size(2.074rem);
   }
 }
+
 .hero-section__slogan {
-  font-size: 16px;
+  // font-size: 16px;
   line-height: 1.45;
   color: #afafaf;
 
-  @include small-tablet {
-    font-size: 18px;
-  }
+  // @include small-tablet {
+  //   font-size: 18px;
+  // }
+
+  @include font-size(1.728rem);
 
   @include tablet {
-    font-size: 20px;
+    // font-size: 20px;
     line-height: 1.55;
   }
 }
