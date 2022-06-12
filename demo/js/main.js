@@ -12,6 +12,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_auto_carousel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/auto-carousel */ "./src/js/components/auto-carousel.js");
 /* harmony import */ var _components_faq_accordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/faq-accordion */ "./src/js/components/faq-accordion.js");
 /* harmony import */ var _components_faq_accordion__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_faq_accordion__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_review_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/review-carousel */ "./src/js/components/review-carousel.js");
+
 
 
 
@@ -169,15 +171,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay]);
-var autoSwiper = document.querySelector(".js-auto-swiper");
-var autoCarousel = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](autoSwiper, {
+var autoCarouselContainer = document.querySelector(".js-auto-carousel-container"),
+    autoCarouselMain = autoCarouselContainer.querySelector(".js-swiper"),
+    autoCarouselPrevBtn = autoCarouselContainer.querySelector(".js-carousel-button-prev"),
+    autoCarouselNextBtn = autoCarouselContainer.querySelector(".js-carousel-button-next");
+var autoCarousel = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](autoCarouselMain, {
   autoplay: {
     delay: 5000
   },
   loop: true,
   navigation: {
-    nextEl: ".js-auto-swiper-button-next",
-    prevEl: ".js-auto-swiper-button-prev"
+    nextEl: autoCarouselNextBtn,
+    prevEl: autoCarouselPrevBtn
   },
   slidesPerView: 1,
   spaceBetween: 10,
@@ -206,6 +211,36 @@ var _require = __webpack_require__(/*! ../functions/accordion */ "./src/js/funct
 
 document.querySelectorAll(".js-accordion").forEach(function (el) {
   new Accordion(el);
+});
+
+/***/ }),
+
+/***/ "./src/js/components/review-carousel.js":
+/*!**********************************************!*\
+  !*** ./src/js/components/review-carousel.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay]);
+var reviewsCarouselContainer = document.querySelector(".js-reviews-carousel-container"),
+    reviewsCarouselMain = reviewsCarouselContainer.querySelector(".js-carousel"),
+    reviewsCarouselPrevBtn = reviewsCarouselContainer.querySelector(".js-carousel-button-prev"),
+    reviewsCarouselNextBtn = reviewsCarouselContainer.querySelector(".js-carousel-button-next");
+var reviewsCarousel = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](reviewsCarouselMain, {
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  navigation: {
+    nextEl: reviewsCarouselNextBtn,
+    prevEl: reviewsCarouselPrevBtn
+  },
+  slidesPerView: 1,
+  spaceBetween: 10
 });
 
 /***/ }),
