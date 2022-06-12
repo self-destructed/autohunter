@@ -40,18 +40,22 @@
   padding-left: 30px;
 }
 .services__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #222222;
-  border: 1px solid #222222;
-  height: 45px;
-  width: 155px;
-  border-radius: 50px;
 }
 .services__link {
+  display: flex;
+  border: 1px solid #222;
+  border-radius: 50px;
+  height: 45px;
+  width: 155px;
+  justify-content: center;
+  align-items:center;
   text-decoration: none;
   color: #222222;
   font-size: 14px;
   font-weight: 700;
+}
+.services__link:hover {
+  color: #fff;
+  background-color: #222;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
