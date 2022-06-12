@@ -25,7 +25,7 @@
   margin: 0 auto;
 
   @include tablet {
-    max-width: 860px; // 960?
+    max-width: 100%;
     display: flex;
     gap: 1rem;
 
@@ -36,6 +36,9 @@
 }
 .contacts-section__contact-info-wrapper {
   margin: 0 auto 20px;
+  @include tablet {
+    margin: 0;
+  }
 }
 
 .contact-info {

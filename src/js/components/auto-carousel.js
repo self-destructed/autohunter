@@ -1,16 +1,25 @@
 import Swiper, { Autoplay, Navigation } from "swiper";
 Swiper.use([Navigation, Autoplay]);
 
-const autoSwiper = document.querySelector(".js-auto-swiper");
+const autoCarouselContainer = document.querySelector(
+    ".js-auto-carousel-container"
+  ),
+  autoCarouselMain = autoCarouselContainer.querySelector(".js-swiper"),
+  autoCarouselPrevBtn = autoCarouselContainer.querySelector(
+    ".js-carousel-button-prev"
+  ),
+  autoCarouselNextBtn = autoCarouselContainer.querySelector(
+    ".js-carousel-button-next"
+  );
 
-const autoCarousel = new Swiper(autoSwiper, {
+const autoCarousel = new Swiper(autoCarouselMain, {
   autoplay: {
     delay: 5000,
   },
   loop: true,
   navigation: {
-    nextEl: ".js-auto-swiper-button-next",
-    prevEl: ".js-auto-swiper-button-prev",
+    nextEl: autoCarouselNextBtn,
+    prevEl: autoCarouselPrevBtn,
   },
   slidesPerView: 1,
   spaceBetween: 10,
