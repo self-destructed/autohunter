@@ -75,8 +75,46 @@ import { burger } from "./functions/burger";
 //   console.log(e.detail.dir);
 // });
 
-// import { validateForms } from './functions/validate-forms';
-// const rules1 = [...];
+import { validateForms } from "./functions/validate-forms";
+
+const rules = [
+  {
+    ruleSelector: ".js-contacts-form-input-name",
+    rules: [
+      {
+        rule: "minLength",
+        value: 2,
+        errorMessage: "Ім'я надто коротке",
+      },
+      {
+        rule: "required",
+        errorMessage: "Введіть ваше ім'я",
+      },
+      {
+        rule: "maxLength",
+        value: 30,
+        errorMessage: "Ім'я надто довге",
+      },
+    ],
+  },
+  {
+    ruleSelector: ".js-contacts-form-input-tel",
+    tel: true,
+    telError: "Введіть правильний телефон",
+    rules: [
+      {
+        rule: "required",
+        value: true,
+        errorMessage: "Заповніть телефон",
+      },
+    ],
+  },
+];
+const afterForm = () => {
+  console.log("Произошла отправка, тут можно писать любые действия");
+};
+
+validateForms(".js-contacts-form", rules, afterForm);
 
 // const afterForm = () => {
 //   console.log('Произошла отправка, тут можно писать любые действия');

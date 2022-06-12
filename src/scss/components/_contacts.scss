@@ -1,0 +1,102 @@
+.contacts-section {
+}
+.section__title {
+}
+.contacts-section__title {
+}
+
+.contacts-section__description {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #101010;
+
+  @include tablet {
+    font-size: 22px;
+  }
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.contacts-section__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 860px; // 960?
+    display: flex;
+    gap: 1rem;
+
+    & > * {
+      width: 50%;
+    }
+  }
+}
+.contacts-section__contact-info-wrapper {
+  margin: 0 auto 20px;
+}
+
+.contact-info {
+  font-style: normal;
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
+
+  .socials {
+    justify-content: center;
+    @include tablet {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.contact-info__title {
+  font-weight: 600;
+}
+
+.contact-info__list {
+}
+.contact-info__list-item {
+}
+.contact-info__link {
+}
+.contact-info__schedule {
+}
+.contacts-section__form-wrapper {
+}
+.contacts-form {
+}
+
+.contacts-form__input-wrapper {
+  @include mb(24px);
+  .just-validate-error-label {
+  }
+}
+
+.contacts-form__input {
+  width: 100%;
+  min-height: 60px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.33;
+
+  transition: border 0.3s ease;
+
+  &.just-validate-error-field {
+    border: 1px solid red; //заменить на красный с кнопки
+  }
+}
+.js-contacts-form-input-name {
+}
+.js-contacts-form-input-tel {
+}
+.btn-primary {
+}
+.contacts-form__submit-btn {
+}
+.contacts-form__tip {
+}

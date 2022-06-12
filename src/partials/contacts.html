@@ -1,0 +1,57 @@
+<section class="section contacts-section">
+  <div class="container">
+    <h2 class="section__title contacts-section__title">Контакти</h2>
+    <p class="contacts-section__description">Залиште свої контактні дані,<br />
+      <span>і ми зв'яжемося з Вами протягом години!</span>
+    </p>
+    <div class="contacts-section__wrapper">
+      <div class="contacts-section__contact-info-wrapper">
+        <address class="contact-info">
+          <h3 class="contact-info__title">Контактна інформація</h3>
+          <ul class="list-reset contact-info__list">
+            <li class="contact-info__list-item">
+              <a class="contact-info__link"
+                href="tel:+380933822079">+38 093 382 20 79 Максим</a>
+            </li>
+            <li class="contact-info__list-item">
+              <a class="contact-info__link"
+                href="tel:+380981765898">+38 098 176 58 98 Ксенія</a>
+            </li>
+          </ul>
+          <p class="contact-info__schedule">
+            Час роботи:<br />
+            Пн-сб: 08:00-20:00
+          </p>
+          @include('./socials.html', {'theme':'light'})
+        </address>
+      </div>
+      <div class="contacts-section__form-wrapper">
+        <form action="#"
+          class="contacts-form js-contacts-form"
+          id="contacts-form">
+          <div class="contacts-form__input-wrapper">
+            <label class="visually-hidden"
+              for="contacts-form-name">як до Вас звертатися?</label>
+            <input type="text"
+              class="contacts-form__input js-contacts-form-input-name"
+              placeholder="Дмитро Бабич">
+            <div class="just-validate-error-label"></div>
+          </div>
+          <div class="contacts-form__input-wrapper">
+            <label class="visually-hidden"
+              for="contacts-form-name">Введіть номер телефону</label>
+            <input type="tel"
+              class="contacts-form__input js-contacts-form-input-tel"
+              placeholder="+380 (99) 999-99-99">
+          </div>
+          <button
+            class="btn-reset btn-primary contacts-form__submit-btn">Передзвоніть
+            мені</button>
+          <p class="contacts-form__tip">Натискаючи на кнопку, Ви даєте згоду
+            на обробку Ваших
+            персональних даних.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
