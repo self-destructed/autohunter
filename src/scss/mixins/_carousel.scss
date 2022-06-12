@@ -1,20 +1,61 @@
-.auto-section {
-}
-.container {
-}
-.section__title {
-}
-.auto-section__description {
-  font-size: 20px;
-  line-height: 1.5;
-  color: #101010;
-  text-align: center;
+.carousel {
+  --click-area-width: 40px;
+  --gap: 5px;
 
-  @include tablet {
-    margin: 0 0 60px;
-    font-size: 22px;
+  position: relative;
+  padding: 0 calc(var(--click-area-width) + var(--gap));
+}
+
+.carousel__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--click-area-width);
+
+  &_prev {
+    left: 0;
+    transform: scale(-1);
+  }
+
+  &_next {
+    right: 0;
+  }
+
+  @include hover {
+    svg {
+      background-color: var(--primary-color);
+    }
+  }
+
+  &:focus-visible,
+  &:active {
+    svg {
+      background-color: var(--primary-color);
+    }
+  }
+
+  &:active {
+    svg {
+      transform: scale(0.95);
+    }
+  }
+
+  svg {
+    fill: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 }
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
 .auto-card {
   overflow: hidden;
   border-radius: 5px;

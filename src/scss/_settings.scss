@@ -82,6 +82,10 @@ a {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+
+  &_narrow {
+    --container-width: 870px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

@@ -1,0 +1,53 @@
+.footer {
+  padding: $section-padding-block 0;
+  background-color: #000;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include tablet {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  & > * {
+    width: 100%;
+
+    @include tablet {
+      width: 33.33334%;
+    }
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
+
+.address {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  font-style: normal;
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.address__link {
+  color: inherit;
+}
+
+.top-link {
+  background-color: red;
+  width: min-content;
+
+  @include tablet {
+    margin-left: auto;
+  }
+}

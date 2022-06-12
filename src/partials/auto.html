@@ -5,11 +5,12 @@
       Сам перевіряю кожне авто в три етапи:<br />
       товщиномір, тестдрайв, звіт по VIN-коду
     </p>
-    <div class="auto-swiper">
+    <div class="carousel js-auto-carousel-container">
       <button
-        class="btn-reset auto-swiper__button auto-swiper__button_prev js-auto-swiper-button-prev">@include('../img/svg/right-arrow.svg')</button>
-
-      <div class="swiper js-auto-swiper">
+        class="btn-reset carousel__button carousel__button_prev js-carousel-button-prev">
+        @include('../img/svg/right-arrow.svg')
+      </button>
+      <div class="swiper js-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <article class="auto-card">
@@ -502,7 +503,7 @@
         </div>
       </div>
       <button
-        class="btn-reset auto-swiper__button auto-swiper__button_next js-auto-swiper-button-next">@include('../img/svg/right-arrow.svg')</button>
+        class="btn-reset carousel__button carousel__button_next js-carousel-button-next">@include('../img/svg/right-arrow.svg')</button>
 
     </div>
   </div>
