@@ -1,12 +1,12 @@
 @mixin accordion {
   .accordion {
-    --paddingY: 16px;
-    --paddingX: 16px;
+    --paddingY: 1em;
+    --paddingX: 1em;
     --padding-top: var(--paddingY);
     --padding-bottom: var(--paddingY);
     --padding-left: var(--paddingX);
     --padding-right: var(--paddingX);
-    --icon-size: 32px;
+    --icon-size: 2em;
     --icon-width: var(--icon-size);
     --icon-height: var(--icon-size);
     --text-color: #000;

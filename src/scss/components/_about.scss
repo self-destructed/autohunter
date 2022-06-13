@@ -10,10 +10,18 @@
 }
 .about__text {
   color: #070706;
-  font-size: 18px;
   line-height: 1.4;
   font-weight: 400;
+
+  p {
+    margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
+
 .about__image {
   display: flex;
   justify-content: center;

@@ -1,9 +1,3 @@
-// если вы хотите использовать sass-переменные - удалите root
-// colors
-$section-padding-block: 60px;
-$section-padding-block-start: $section-padding-block;
-$section-padding-block-end: $section-padding-block;
-
 :root {
   --font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
@@ -13,4 +7,6 @@ $section-padding-block-end: $section-padding-block;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   --primary-color: #ff0009; //#f90606??
+  --secondary-color: #ff8562;
+  // #070706 text color??
 }

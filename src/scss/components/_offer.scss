@@ -31,16 +31,19 @@
   //TODO container query?
   display: flex;
   flex-direction: row;
-  column-gap: 25px;
+  column-gap: 1.5rem;
   align-items: center;
 }
+
 .status__icon {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
 }
+
 .status__text {
-  color: #070706;
+  margin: 0;
   // font-size: 18px;
+  color: #070706;
   line-height: 1.4;
   opacity: 0.85; //!fix grey color without opacity?
 }
