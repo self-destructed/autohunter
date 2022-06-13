@@ -1,5 +1,5 @@
 .footer {
-  padding: $section-padding-block 0;
+  padding: 30px 0;
   background-color: #000;
 }
 
@@ -37,10 +37,6 @@
   @include tablet {
     text-align: left;
   }
-}
-
-.address__link {
-  color: inherit;
 }
 
 .top-link {

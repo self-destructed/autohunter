@@ -1,13 +1,15 @@
-<section class="section contacts-section">
+<section class="section contacts-section"
+  id="contacts">
   <div class="container container_narrow">
     <h2 class="section__title contacts-section__title">Контакти</h2>
-    <p class="contacts-section__description">Залиште свої контактні дані,<br />
+    <p class="section__description-text contacts-section__description">Залиште
+      свої контактні дані,<br />
       <span>і ми зв'яжемося з Вами протягом години!</span>
     </p>
     <div class="contacts-section__wrapper">
       <div class="contacts-section__contact-info-wrapper">
         <address class="contact-info">
-          <h3 class="contact-info__title">Контактна інформація</h3>
+          <span class="contact-info__title">Контактна інформація</span>
           <ul class="list-reset contact-info__list">
             <li class="contact-info__list-item">
               <a class="contact-info__link"
@@ -34,18 +36,20 @@
               for="contacts-form-name">як до Вас звертатися?</label>
             <input type="text"
               class="contacts-form__input js-contacts-form-input-name"
+              id="contacts-form-name"
               placeholder="Дмитро Бабич">
             <div class="just-validate-error-label"></div>
           </div>
           <div class="contacts-form__input-wrapper">
             <label class="visually-hidden"
-              for="contacts-form-name">Введіть номер телефону</label>
+              for="contacts-form-tel">Введіть номер телефону</label>
             <input type="tel"
               class="contacts-form__input js-contacts-form-input-tel"
+              id="contacts-form-tel"
               placeholder="+380 (99) 999-99-99">
           </div>
           <button
-            class="btn-reset btn-primary contacts-form__submit-btn contacts-section__btn">Передзвоніть
+            class="btn-reset link link_primary contacts-form__submit-btn">Передзвоніть
             мені</button>
           <p class="contacts-form__tip">Натискаючи на кнопку, Ви даєте згоду
             на обробку Ваших

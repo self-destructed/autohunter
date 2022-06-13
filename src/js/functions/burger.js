@@ -7,8 +7,6 @@ import { enableScroll } from "../functions/enable-scroll";
   const menuItems = document?.querySelectorAll("[data-menu-item]");
   const overlay = document?.querySelector("[data-menu-overlay]");
 
-  const toggleBurger = () => {};
-
   const toggleMenu = () => {
     if (menu?.classList.contains("menu--active")) {
       menu.ontransitionend = (e) => {

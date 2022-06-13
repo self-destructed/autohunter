@@ -2,54 +2,47 @@
   <div class="container header__container">
 
     @include('logo.html')
-    <div class="fixed-block">
-      <div class="menu menu--inactive"
-        data-menu>
+    <div class="menu menu--inactive fixed-block"
+      data-menu>
 
-        @include('logo.html')
-        <nav class="nav">
-          <ul class="list-reset nav__list">
-            <li class="nav__item">
-              <a href="#"
-                data-menu-item
-                class="nav__link">Про мене</a>
-            </li>
-            <li class="nav__item">
-              <a href="#"
-                data-menu-item
-                class="nav__link">Авто</a>
-            </li>
-            <li class="nav__item">
-              <a href="#"
-                data-menu-item
-                class="nav__link">Послуги та ціни</a>
-            </li>
-            <li class="nav__item">
-              <a href="#"
-                data-menu-item
-                class="nav__link">F.A.Q.</a>
-            </li>
-            <li class="nav__item">
-              <a href="#"
-                data-menu-item
-                class="nav__link">Відгуки</a>
-            </li>
-            <li class="nav__item">
-              <a href="#"
-                data-menu-item
-                class="nav__link">Відгуки</a>
-            </li>
-            <li class="nav__item">
-              <a href="#"
-                data-menu-item
-                class="nav__link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-
-        @include('socials.html', {'theme':'dark'})
-      </div>
+      @include('logo.html')
+      <nav class="nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#about"
+              data-menu-item
+              class="nav__link">Про мене</a>
+          </li>
+          <li class="nav__item">
+            <a href="#auto"
+              data-menu-item
+              class="nav__link">Авто</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services"
+              data-menu-item
+              class="nav__link">Послуги та ціни</a>
+          </li>
+          <li class="nav__item">
+            <a href="#reviews"
+              data-menu-item
+              class="nav__link">Відгуки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#faq"
+              data-menu-item
+              class="nav__link">F.A.Q.</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts"
+              data-menu-item
+              class="nav__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      @include('socials.html', {'theme':'dark'})
     </div>
+
     <button class="burger"
       aria-label="Открыть меню"
       aria-expanded="false"

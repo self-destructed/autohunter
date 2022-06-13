@@ -1,17 +1,27 @@
 .section {
-  padding: $section-padding-block 0;
+  @include rfs(60px 0, padding);
 }
 
 .section__title {
   font-weight: 600;
   text-align: center;
   color: #000;
-  font-size: 42px;
-  line-height: 1.23;
+  line-height: 1.33;
+  margin-top: 0;
 
-  margin-bottom: 40px;
+  @include font-size(2.488rem); //39.81px
+}
 
-  @media screen and (max-width: 1200px) {
-    font-size: 38px;
-  }
+.section__description-text {
+  @include font-size(1.728rem); //27.65px
+  // @include font-size(1.44rem); //23.04px
+  text-align: center;
+
+  // @include tablet {
+  //   text-align: left;
+  // }
+}
+
+.article-title {
+  @include font-size(1.44rem); //23.04px
 }

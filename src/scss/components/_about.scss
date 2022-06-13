@@ -1,13 +1,6 @@
-.section {
-}
 .about-section {
 }
-.container {
-}
-.section__title {
-}
-.about-section__title {
-}
+
 .about {
   @include small-tablet {
     display: grid;
@@ -17,16 +10,25 @@
 }
 .about__text {
   color: #070706;
-  font-size: 18px;
   line-height: 1.4;
   font-weight: 400;
+
+  p {
+    margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
+
 .about__image {
   display: flex;
   justify-content: center;
-
 }
 .about__img {
+  border-radius: 5px;
+
   @include small-tablet {
     height: 500px;
     width: 500px;

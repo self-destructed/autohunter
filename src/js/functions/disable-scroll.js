@@ -1,8 +1,10 @@
 import vars from "../_vars";
 
 export const disableScroll = () => {
+  console.log("disable");
   const fixBlocks = document?.querySelectorAll(".fixed-block");
   const pagePosition = window.scrollY;
+  console.log(pagePosition);
   const paddingOffset = `${window.innerWidth - vars.bodyEl.offsetWidth}px`;
 
   vars.htmlEl.style.scrollBehavior = "none";

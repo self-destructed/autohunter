@@ -29,56 +29,28 @@
 }
 
 .hero-section__title {
-  letter-spacing: 1px;
-  font-size: 30px;
+  letter-spacing: 0.0625em;
   font-weight: 600;
   line-height: 1.23;
   color: #fff;
 
-  @include small-tablet {
-    font-size: 48px;
-  }
-
-  @include tablet {
-    font-size: 52px;
-  }
+  @include font-size(3.583rem);
 
   span {
-    font-size: 30px;
+    @include font-size(2.074rem);
   }
 }
+
 .hero-section__slogan {
-  font-size: 16px;
+  @include font-size(1.728rem);
   line-height: 1.45;
   color: #afafaf;
 
-  @include small-tablet {
-    font-size: 18px;
-  }
-
   @include tablet {
-    font-size: 20px;
     line-height: 1.55;
   }
 }
-.hero-section__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: var(--primary-color);
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 16px;
-  min-height: 60px;
-  padding-left: 60px;
-  padding-right: 60px;
-  transition: background-color 0.3s ease, color 0.3s ease;
 
-  &:hover {
-    background-color: #b3b3b3;
-    color: #000000;
-  }
+.hero-section__link {
+  text-transform: uppercase;
 }

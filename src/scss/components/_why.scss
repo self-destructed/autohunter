@@ -3,10 +3,9 @@
 
 .why-section__title {
   line-height: 1.23;
-  text-align: left;
+  // text-align: left;
 }
 .section__title {
-
 }
 .why {
 }
@@ -25,15 +24,23 @@
 }
 
 .why__item {
+  @include mb(1.5rem);
 }
+
 .reason {
 }
+
 .reason__icon {
+  width: 3.125rem;
+  height: 3.125rem;
 }
+
 .reason__title {
-  font-size: 22px;
+  margin-top: 0; // font-size: 22px;
+  @include font-size(1.44rem);
 }
 .reason__text {
-  font-size: 14px;
+  margin: 0;
+  // font-size: 14px;
   line-height: 1.55;
 }

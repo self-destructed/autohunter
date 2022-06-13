@@ -1,5 +1,8 @@
 .socials {
-  --icon-size: 30px;
+  // define vars
+  // --block-size: 30px;
+  // --icon-size: 24px;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -9,16 +12,21 @@
     --icon-color: #fff;
     --bg-color: #000;
   }
+
   &_dark {
     --icon-color: #000;
     --bg-color: #fff;
   }
 }
-.socials__item {
-}
+
 .socials__link {
-  width: var(--icon-width, var(--icon-size));
-  height: var(--icon-height, var(--icon-size));
+  --block-width: var(--block-size, 30px);
+  --block-height: var(--block-size, 30px);
+  --icon-width: var(--icon-size, 80%);
+  --icon-height: var(--icon-size, 80%);
+
+  width: var(--block-width);
+  height: var(--block-height);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,8 +34,10 @@
   background-color: var(--bg-color);
 
   svg {
-    width: 23px;
-    height: 23px;
+    max-width: 100%;
+    max-height: 100%;
+    width: var(--icon-width);
+    height: var(--icon-height);
     fill: var(--icon-color);
   }
 }

@@ -9,7 +9,7 @@
 .offer-section__title {
   line-height: 1.4;
   opacity: 0.9;
-  text-align: left;
+  // text-align: left;
 }
 .offer {
 }
@@ -21,24 +21,29 @@
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 30px;
     column-gap: 30px;
+    // @include rfs(30px, column-gap);
+    // @include rfs(30px, row-gap);
   }
 }
 .offer__item {
 }
 .status {
+  //TODO container query?
   display: flex;
   flex-direction: row;
-  column-gap: 25px;
+  column-gap: 1.5rem;
   align-items: center;
 }
+
 .status__icon {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
 }
+
 .status__text {
+  margin: 0;
+  // font-size: 18px;
   color: #070706;
-  font-size: 18px;
   line-height: 1.4;
-  font-weight: 400;
-  opacity: 0.85;
+  opacity: 0.85; //!fix grey color without opacity?
 }
