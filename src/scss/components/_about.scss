@@ -24,9 +24,10 @@
 .about__image {
   display: flex;
   justify-content: center;
-
 }
 .about__img {
+  border-radius: 5px;
+
   @include small-tablet {
     height: 500px;
     width: 500px;

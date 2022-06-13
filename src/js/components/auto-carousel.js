@@ -14,7 +14,7 @@ const autoCarouselContainer = document.querySelector(
 
 const autoCarousel = new Swiper(autoCarouselMain, {
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
   loop: true,
   navigation: {

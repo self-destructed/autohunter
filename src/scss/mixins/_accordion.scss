@@ -1,7 +1,7 @@
 @mixin accordion {
   .accordion {
     --paddingY: 16px;
-    --paddingX: 24px;
+    --paddingX: 16px;
     --padding-top: var(--paddingY);
     --padding-bottom: var(--paddingY);
     --padding-left: var(--paddingX);
@@ -26,6 +26,7 @@
     padding: var(--padding-top) calc(2 * calc(var(--padding-right)))
       var(--padding-bottom) var(--padding-left);
     cursor: pointer;
+    font-weight: 600;
 
     &:hover::before {
       background-color: #f90606;

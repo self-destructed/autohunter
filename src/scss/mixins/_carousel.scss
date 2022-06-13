@@ -3,7 +3,10 @@
   --gap: 5px;
 
   position: relative;
-  padding: 0 calc(var(--click-area-width) + var(--gap));
+
+  @include small-tablet {
+    padding: 0 calc(var(--click-area-width) + var(--gap));
+  }
 }
 
 .carousel__button {
@@ -16,12 +19,24 @@
   width: var(--click-area-width);
 
   &_prev {
-    left: 0;
+    display: none;
+    // left: calc(var(--container-offset) * -1);
     transform: scale(-1);
+
+    @include small-tablet {
+      display: flex;
+      left: 0;
+    }
   }
 
   &_next {
-    right: 0;
+    display: none;
+    right: calc(var(--container-offset) * -1);
+
+    @include small-tablet {
+      display: flex;
+      right: 0;
+    }
   }
 
   @include hover {

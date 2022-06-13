@@ -14,7 +14,7 @@ const reviewsCarouselContainer = document.querySelector(
 
 const reviewsCarousel = new Swiper(reviewsCarouselMain, {
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
   loop: true,
   navigation: {

@@ -1,4 +1,45 @@
-.soc-link{
+.soc-link {
   color: #ff8562;
   text-decoration: none;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-color, #000);
+  background-color: var(--bg-color, #fff);
+  border-radius: 30px;
+  font-weight: 700;
+  // min-height: 60px;
+
+  font-size: 0.8rem;
+  @include rfs(16px 8px, padding);
+  transition: background-color 0.3s ease, color 0.3s ease, transform ease 0.3s;
+
+  @include mobile {
+    font-size: 1rem;
+    @include rfs(20px 48px, padding);
+  }
+
+  &:hover {
+    background-color: #b3b3b3;
+    color: #000000;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &_primary {
+    --bg-color: var(--primary-color);
+    --text-color: #fff;
+
+    &:hover,
+    &:focus {
+      --text-color: #000;
+      --bg-color: #b3b3b3;
+    }
+  }
 }

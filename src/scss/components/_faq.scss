@@ -8,11 +8,32 @@
 
 .questions {
   margin: 0 auto;
-  max-width: 860px;
+  // max-width: 860px;
+
+  .accordion {
+    .accordion__summary {
+      @include font-size(1.2rem); //19.2px
+    }
+
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    ol,
+    ul {
+      padding-left: 16px;
+    }
+  }
 }
 
 .questions__list {
 }
+
 .questions__item {
   padding: 5px 0;
 

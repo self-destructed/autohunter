@@ -30,11 +30,12 @@
 .steps {
   --counter-size: 50px;
 
-  max-width: 860px;
+  // max-width: 860px;
+  margin: 0 auto;
 
-  @include tablet {
-    max-width: 100%;
-  }
+  // @include tablet {
+  //   max-width: 100%;
+  // }
 }
 .steps__list {
   position: relative;

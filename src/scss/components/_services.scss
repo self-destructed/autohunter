@@ -22,6 +22,9 @@
 }
 
 .services__image {
+  img {
+    border-radius: 5px;
+  }
 }
 
 .services__block_title {
@@ -42,7 +45,8 @@
 
 .services__list {
   // font-size: 14px;
-  @include font-size(0.833rem); //13.33px
+  // @include font-size(0.833rem); //13.33px
+  // @include font-size(1rem); ///16.00px
   line-height: 1.55;
   font-weight: 400;
   color: #101010;

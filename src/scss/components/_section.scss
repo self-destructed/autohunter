@@ -14,9 +14,14 @@
 
 .section__description-text {
   @include font-size(1.728rem); //27.65px
-  @include font-size(1.44rem); //23.04px
+  // @include font-size(1.44rem); //23.04px
+  text-align: center;
+
+  // @include tablet {
+  //   text-align: left;
+  // }
 }
 
 .article-title {
-  @include font-size(1.44rem); //23.04px  
+  @include font-size(1.44rem); //23.04px
 }
