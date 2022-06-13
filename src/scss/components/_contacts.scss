@@ -58,16 +58,25 @@
 }
 
 .contact-info__title {
+  font-size: 20px;
   font-weight: 600;
 }
 
 .contact-info__list {
+
 }
 .contact-info__list-item {
 }
 .contact-info__link {
+  font-size: 20px;
+  line-height: 1.45;
+  color:#000000;
 }
 .contact-info__schedule {
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #101010;
 }
 .contacts-section__form-wrapper {
 }
@@ -102,4 +111,29 @@
 .contacts-form__submit-btn {
 }
 .contacts-form__tip {
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #101010;
+}
+
+.contacts-section__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  min-height: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #b3b3b3;
+    color: #000000;
+  }
 }

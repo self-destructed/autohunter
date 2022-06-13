@@ -44,7 +44,9 @@
 }
 
 .top-link {
-  background-color: red;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
   width: min-content;
 
   @include tablet {
