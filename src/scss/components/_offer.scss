@@ -26,7 +26,13 @@
   }
 }
 .offer__item {
+  @include mb(1rem);
+
+  @include tablet {
+    @include mb(0);
+  }
 }
+
 .status {
   //TODO container query?
   display: flex;

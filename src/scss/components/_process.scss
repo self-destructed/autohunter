@@ -24,7 +24,7 @@
 .process-section__text {
   color: #fff;
   text-align: center;
-  color:#fff;
+  color: #fff;
 }
 
 .process-section__link {
@@ -97,11 +97,10 @@
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr;
   column-gap: 16px;
-  & > * {
-    align-self: center;
-  }
+  align-items: center;
 
   @include tablet {
+    align-items: start;
     grid-template-columns: 1fr auto 1fr;
   }
 
